@@ -1,0 +1,728 @@
+/*
+    Crye Precision's website external style sheet.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0; /* I set the margin to 0 so that there wont be any excess space. */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaeaea;
+    
+}
+
+/* This portion of the CSS focus on addind a video in the landing page*/
+/* The video container sets attributes of the video that are unique to this background video. */
+.VideoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+  
+  /* This ensures that the video covers the whole screen. */
+#BackgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+/* Top Component style from this point onwards. */
+header {
+    display: flex;
+}
+/* The sticky header */
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Customize the background color */
+    z-index: 100; /* Adjust the z-index if needed */
+}
+
+/* The Company Logo */
+#C1_Logo {
+    width: 220px;
+    min-width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/*The Search Bar*/
+/* This creates the style and box for the search box */
+.Search-box {
+    width: 10vw;
+    background: #fff;
+    height: 30px;
+    margin-top: 34px;
+    margin-left: 70px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.row {
+    display:flex;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 10px;
+    color: #333
+}
+
+/* Styling done for the search icon button */
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+/* The styling for the icon itself */
+button .fa-solid {
+    width: 25px;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* To increase the contrast for the placeholder text */
+::placeholder {
+    color: #555;
+}
+
+/* The styling for the result box and the listed items background color */
+.result-box ul {
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+    background: white;
+}
+
+/* The styling for the listed items below the search box */
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* The styling for the hover effect for the contents in the result box */
+.result-box ul li:hover {
+    background-color: gray;
+}
+
+/*The following code below would limit the number of suggested keywords */
+.result-box {
+    position: relative;
+    max-height: 300px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+/* The Motto */
+#Motto {
+    color:white;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+/* This portion of the CSS will be used to codethe language drop down selector*/
+/* The drop-down box refers to the box that appears when clicking the main field */
+.drop-down {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.322);
+    width: 208px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+/* The size of the icon */
+.arrow {
+    font-size: 30px;
+}
+
+/* wrapper is a styling code for the elements in the list */
+.wrapper {
+     display: flex;
+     gap: 0.5rem;
+     align-items: center;
+}
+
+/* This style refers to the container or box that hold all the elements */
+.list {
+    background-color: #fff;
+    position: fixed;
+    top: 157px;
+    left: 25px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.322);
+    cursor: pointer;
+    max-height: 250px;
+    overflow-y: scroll;
+    width: 208px;
+    display: none;
+}
+
+/* this style reveals the list when clicking the change language field */
+.show {
+    display: block;
+}
+
+/* This style refers to each item in the div tag which includes the country flag and name. */
+.item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+}
+
+/* The style when your mouse hovers over an option. */
+.item:hover {
+    background-color: rgb(211,211,211);
+}
+
+/* Navigation Bar */
+.Headerflex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Nav{
+    display: flex;
+    margin: 0;
+    margin-left: 0px;
+    padding: 0;
+    padding-left: 190px;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+
+.Nav li {
+    display: inline;
+}
+
+.Nav a {
+    display: inline-block;
+    color: White;
+    text-align: center;
+    /* The padding here allows you to adjust the hover colored section*/
+    padding: 30px 15px;
+    text-decoration: none;
+    font-size: 10px;
+    /*To adjust the spacing between the nav bar fields*/
+    margin: 0 0px;
+}
+
+.Nav a:hover {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+/* CSS styling for the shopping cart */
+#Cart {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 30px;
+    height: 40px;
+}
+
+/* The items below are for the main */
+/* For any items that need to be centered */
+.Center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 750px
+}
+
+/* CSS styling for the Giant (Der Riese) Crye logo*/
+#DerRiese {
+    
+    margin-top: 1px;
+    width: 450px;
+    height: 450px;
+}
+
+/* The styling below is for the Footer */
+/* Used to move the elements in the container to a centralized square within the footer */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+/* Visually, this moves the elements in the container to an even smaller and centralized box */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* To remove the dot before the items in the list */
+ul{
+	list-style: none;
+}
+
+/* The style here determines the background color of the space that the footer is going to take up */
+.footer{
+	background-color: black;
+    padding: 70px 0;
+}
+
+/* This style makes every element spread out nicely */
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+/* This section edits the column header in the footer */
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+/* This section of code adds that red line and  */
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+/* The color of the text for the text above the subscription box */
+.footer-col p {
+    color: #fff;
+}
+
+/* This style adds spacing between the content below the column header. */
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+/* This style removes the blue hue of the contents */
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+/* This style will move the words to the right by 8px when your mouse hovers over it */
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+/* This style adjust the social media part of the footer  */
+.footer-col .social-links a{
+    /* This section makes the box behind the icons */
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 67px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+
+/* The behavior of the icons when your mouse hovers over it */
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}}
+
+
+/* Removes the dot before the items in the column */
+ul {
+    list-style: none;
+}
+
+main {
+    margin-top: 3vw;
+}
+
+/* For the brown bar above the slides */
+.featured-bar {
+    background-color: #8c5907; /* Brown background */
+    padding: 10px 20px; /* Add some padding */
+    margin-top: 10px;
+    text-align: left; /* Align text to the left */
+    color: white; /* Text color */
+    font-size: 1.2em; 
+}
+
+/* This section of the code belongs to the Image slider */
+#centerslides {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+
+/* The image size */
+.slide img {
+    width: 800px;
+    height: 430px;
+}
+
+/* CSS for manuel slide navigation */
+/* Implementation and positioning of the button */
+.navigation-manuel {
+    position: absolute;
+    width: 800px;
+    margin-top: -110px;
+    display: flex;
+    justify-content: center;
+}
+
+/* The style and color of the buttons */
+.manuel-btn {
+    border: 2px solid darkgray;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* The spacing between the buttons */
+.manuel-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+/* The color of the button when it is hovered on */
+.manuel-btn:hover {
+    background: white;
+}
+
+/* The spacings between the images */
+#radio1:checked ~ .first {
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+    margin-right: 20%;
+    
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+    margin-right: 40%;
+    
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+    margin-right: 60%;
+    
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+    margin-right: 80%;
+    
+}
+
+/* CSS for the automatic navigation */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 4000px;
+    justify-content: center;
+    margin-top: 390px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10000000px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #40D3DC
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #40D3DC
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #40D3DC
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #40D3DC
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: #40D3DC
+}
+
+#PMod {
+    background: black;
+}
+
+#MC {
+    width: 1100px;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+#MC_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#MC_header p {
+    margin-left: 30px;
+}
+
+#content {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#Fam {
+    float: left;
+    width: 500px;
+    height:600px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* Align items vertically in the center */
+.item-container {
+    display: flex;
+    align-items: center; 
+    /* Adjust as needed for spacing between items */
+    margin-bottom: 20px; 
+}
+
+/* Don't allow the image to grow */
+.image {
+    flex: 0 0 auto; 
+    /* Adjust as needed for spacing between image and text */
+    margin-right: 20px; 
+}
+
+/* Ensure the image doesn't exceed its container width */
+.image img {
+    max-width: 100%; 
+}
+
+/* Allow the text to grow and take remaining space */
+.text {
+    flex: 1; 
+}
+
+/* The following CSS styles are for the About Us page */
+.Column {
+    background-color: #ffffff;
+    width: 15%;
+    float: left;
+    height: 635px;
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 80px;
+
+}
+
+.About {
+    background-color: #f4f4f4;
+    width: 85%;
+    float: right;
+    height: 635px;
+    text-align: center;
+    padding-top: 100px;
+}
+.About h1 {
+    font-size: 65px;
+    padding-left: 200px;
+    padding-right: 350px;
+    text-align: left;
+}
+
+.About h4 {
+    font-size: 30px;
+    padding-left: 200px;
+    
+    text-align: left;
+}
+
+.About p {
+    font-size: 15px;
+    padding-left: 200px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.Selected {
+    color: #8c5907;
+}
+
+#CompanyUL {
+    margin-left: 10px;
+    margin-top: 15px;;
+    width: 120px;
+}
+
+/* Styling for the logo on larger screens, note: place this at the final setion of the code. */
+@media screen and (min-width: 1200px) {
+    header {
+        display: flex;
+        flex-shrink: 1;
+    }
+    
+    #C1_Logo {
+        width: 250px; 
+    }
+
+    .Search-box {
+        width: 100px;
+        margin-left: 250px;
+        margin-right: 100px;
+    }
+
+    #Motto {
+        font-size: 15px;  
+        margin-left: 100px;
+    }
+
+    .drop-down {
+        margin-right: 200px;
+    }
+
+    .Nav {
+        margin-left: 215px;
+        margin-right: 230px;
+    }   
+
+    #Cart {
+        width: 40px;
+        height: 50px;
+    }
+
+    #DerRiese {
+        width: 700px ;
+        height: 700px;
+    }
+    #MC {
+        width:1900px;
+        height: auto;
+        padding: 30px;
+    }
+
+    #Fam {
+        margin-left: 240px;
+    }
+
+    #Meetcontent {
+        text-align: center;
+        margin-right: 300px;
+    }
+
+    #CompanyUL {
+        margin-left: 15px;
+        width: 230px;
+    }
+
+    .About h1 {
+        font-size: 65px;
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    
+    .About h4 {
+        font-size: 30px;
+        padding-left: 350px;
+        padding-right: 200px;
+    }
+    
+    .About p {
+        font-size: 20px;
+        padding-left: 350px;
+        padding-right: 300px;
+    }
+}

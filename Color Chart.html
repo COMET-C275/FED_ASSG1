@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Author" content="Codi Chew">
+        <meta name="Description" content="FED Assignment 1 website">
+        <meta name="Date created" content="Monday 6th November 2023">
+        <meta name="viewport" content="Width=device-width, initial scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <script src="https://kit.fontawesome.com/98da85ff96.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "Images used/New photos/Crye page logo.jpg">
+        <title>Crye Precision</title>
+    </head>
+    <header id = "PMod">
+        <!-- Now that we have inserted the background video, we can add the top components-->
+        <!-- Component 1 : Logo + Searchbar + Motto -->
+        <!-- The Company Logo -->
+        <a href="Index.html"><img id = "C1_Logo" src="Images used/Edited photos/Crye Precision.png" width="250" height="60"></a>
+            
+        <!-- The Search Bar -->
+        <div class = "Search-box">
+            <div class = "row">
+                <!-- To initialize a search box and create the text inside the box that will 
+                disappear once you click on it and will return if you click elsewhere. -->
+                <!-- The autocomplete off turns off the autocomplete words saved in your browser. -->
+                <input type = "text" id = "input-box" placeholder="SEARCH FOR PRODUCTS"
+                autocomplete = "off">
+                <!-- The code below is the icon code from Awesome Font -->
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- The keywords to assist the user when searching a product -->
+            <div class = "result-box">
+            </div>
+        </div>
+
+        <!-- The Motto -->
+        <h3 id = "Motto"><strong>SERVING THOSE WHO PROTECT FREEDOM</strong></h3>
+
+        <!-- Component 2 : Navbar + Language select + Cart-->
+        <!-- The navigation bar and the dropdown menu -->
+        <!-- The Language select -->
+        <div class = "Headerflex"> 
+            <div class="drop-down">
+
+                <div class="wrapper">
+                    <img src="Images used/Regular photos/US flag.png" height="30px" class="selectedImg">
+                    <div class = "selected">English - US</div>
+                </div>
+                <iconify-icon class = "arrow" icon="ri:arrow-drop-down-fill"></iconify-icon>
+        
+                <div class = "list">   
+                    <div class="item">
+                        <img src="Images used/Regular photos/US flag.png" height="30px">
+                        <div class = "text">English - US</div>
+                    </div>
+
+                    <div class="item">
+                        <img src="Images used/Regular photos/German flag.png" height="30px">
+                        <div class = "text">German</div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="Images used/Regular photos/France.png" height="30px">
+                        <div class = "text">French</div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="Images used/Regular photos/south-korea.png" height="30px">
+                        <div class = "text">Korean</div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="Images used/Regular photos/Japan flag.png" height="30px">
+                        <div class = "text">Japanese</div>
+                    </div>
+                </div>
+            </div>
+            <!-- The navigation bar -->       
+            <ul class="Nav">
+                <li><a id="Home" href="Index.html" style = "text-decoration: none;"><h2>Home</h2></a></li>
+                <li><a id="AboutUs" href="About Us.html" style = "text-decoration: none;"><h2>About Us</h2></a></li>
+                <li><a id="Products" href="" style = "text-decoration: none;"><h2>Products</h2></a></li>
+            </ul>
+            <!-- The shopping cart -->
+            <a href="">
+                <img id = "Cart" src="Images used/Edited photos/Shopping cart symbol.png">
+            </a>
+        </div>
+    </header>
+    <body style = "background: linear-gradient(to bottom, #D2B48C 0%, #6a8370 100%);">
+        <!-- Begin the color chart contents -->    
+        <!-- Intro to Multicam -->
+        <div id = "MC_header">
+            <img id = "MC" src="Images used/Unedited photos/Multicam.jpg">
+            <h1><bold>MULTICAM: The Evolution of Camouflage</bold></h1>
+            <p>From the hills of Afghanistan to the trenches of the Ukraine-Russo war, 
+                MultiCam has seen it all, through thick and thin, this camouflage pattern has
+                 served with soldiers around the world since it started its service in 2004. 
+                 Multicam is a versatile camouflage pattern that has gained widespread 
+                 popularity in military and tactical applications due to its effective 
+                 blending capabilities in a variety of environments. Developed by Crye 
+                 Precision, Multicam was introduced in the early 2000s as an evolution of 
+                 previous camouflage patterns, aiming to address the shortcomings of its 
+                 predecessors also known as the UCP or Universal Camouflage pattern which is
+                 infamous for its bright gray color resulting in many soldiers despising the 
+                 UCP pattern.
+            </p>
+            <br>
+            <h3 id = "content">Background:</h3>
+            <p id = "content">
+                Multicam was created in response to the need for a single, adaptable 
+                camouflage pattern that could effectively conceal soldiers across various 
+                terrains and operational environments. Prior to its development, the military
+                used a variety of camouflage patterns, each suited for specific conditions,
+                making it impractical for soldiers to frequently change their uniforms.
+            </p>
+            <h3 id = "content">Background:</h3>
+            <p id = "content">
+                Multicam was created in response to the need for a single, adaptable 
+                camouflage pattern that could effectively conceal soldiers across various 
+                terrains and operational environments. Prior to its development, the military
+                used a variety of camouflage patterns, each suited for specific conditions,
+                making it impractical for soldiers to frequently change their uniforms.
+            </p>
+            <h3 id = "content">Design Philosophy:</h3>
+            <p id = "content">
+                Multicam's design philosophy was centered around the idea of "omniterrain" 
+                effectiveness. It was intended to provide effective concealment in a broad 
+                range of environments, from wooded and forested areas to arid deserts and 
+                urban landscapes. Its unique blend of colors and patterns aimed to mimic the
+                 dappled and variegated nature of natural landscapes.
+            </p>
+            <h3 id = "content">Evolution:</h3>
+            <p id = "content">
+                Multicam has undergone several iterations and variations since its inception:
+
+                a. Multicam: The original Multicam pattern was introduced and widely adopted 
+                by various military units around the world. Its success stemmed from its 
+                ability to provide superior concealment in a wide array of environments.
+
+                b. Multicam Arid: Recognizing the need for a variant tailored to arid and 
+                desert terrains, Crye Precision developed Multicam Arid. This variation 
+                featured a lighter color palette, more suitable for such environments.
+
+                c. Multicam Tropic: For jungle and tropical environments, Multicam Tropic 
+                was introduced, featuring a green-heavy color scheme and patterns more suited
+                for dense foliage.
+
+                d. Multicam Black: Designed for urban and low-light operations, Multicam Black
+                 incorporated darker colors to enhance concealment in urban and nighttime 
+                 settings.
+
+                e. Multicam Alpine: Tailored for snowy and alpine environments, Multicam Alpine
+                 features a predominantly white color palette to blend with snow-covered 
+                 landscapes.
+
+                f. Multicam NyCo: Crye Precision also introduced Multicam NyCo (Nylon/Cotton) 
+                fabric, which combined the benefits of nylon and cotton materials for improved 
+                durability and comfort.
+            </p>
+            <h3 id = "content">Widespread Adoption:</h3>
+            <p id = "content">
+                Multicam has been adopted by various military branches, law enforcement 
+                agencies, and special operations units in many countries. Its adaptability 
+                and effectiveness across different terrains have made it a popular choice 
+                for combat uniforms, gear, and equipment.
+            </p>
+            <h3 id = "content">Influence on Camouflage Design:</h3>
+            <p id = "content">
+                Multicam's success has influenced the design of other camouflage patterns, 
+                both in military and civilian applications. Many manufacturers have developed
+                products with similar color schemes and design principles to achieve better 
+                concealment.
+            </p>
+            <hr>
+            <br>
+            <br>
+            <h1>Meet the MultiCam family!</h1>
+            <br>
+            <div class="item-container">
+                <div class="image">
+                  <img id="Fam" src="Images used/Regular photos/Crye G3.png">
+                </div>
+                <div class="text">
+                  <p id="item-description"> 
+                    The image to the left features the camouflage Multicam, The MultiCam® pattern
+                    was developed to effectively limit the visual and near-IR signature of a 
+                    person operating across a very wide range of physical environments and 
+                    seasons. After many successful evaluations, after being proven in combat, 
+                    and after becoming the officially issued pattern of the US Army for all 
+                    Afghanistan operations in 2010, MultiCam® is the proven multi-environment 
+                    concealment solution. 
+                  </p>
+                  <br>
+                  <img src = "Images used/Unedited photos/MC snip.jpg">
+                  <p> This is an how the Multicam NYCO (Nylon Cotton blend) fabric would look
+                      like
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="item-container">
+                <div class="image">
+                  <img id="Fam" src="Images used/Unedited photos/MC Arid.jpg">
+                </div>
+                <div class="text">
+                  <p id="item-description"> 
+                    The image to the left features the camouflage Multicam Arid, the MultiCam 
+                    Arid™ pattern was developed to effectively reduce the visual and near-IR 
+                    signature of a person operating in desert environments that predominantly 
+                    consist of open sand and rock. The MultiCam Arid™ palette compliments and 
+                    overlaps portions of the main MultiCam® pattern; so pairing MultiCam® gear 
+                    with MultiCam Arid™ apparel results in a well-coordinated concealment 
+                    system.
+                  </p>
+                  <br>
+                  <img src = "Images used/Unedited photos/Arid snip.jpg">
+                  <p> This is an how the Multicam Arid NYCO (Nylon Cotton blend) fabric 
+                    would look like
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="item-container">
+                <div class="image">
+                  <img id="Fam" src="Images used/Unedited photos/MC Tropic.jpg">
+                </div>
+                <div class="text">
+                  <p id="item-description"> 
+                    The image to the left features the camouflage Multicam Tropic, the MultiCam 
+                    Tropic™ pattern was developed to effectively reduce the visual and near-IR 
+                    signature of a person operating in dense jungle environments, areas that 
+                    predominantly consist of lush vegetation that remains relatively unaffected 
+                    by seasonal changes. The MultiCam Tropic™ palette compliments and overlaps 
+                    portions of the main MultiCam® pattern; so pairing MultiCam® gear with 
+                    MultiCam Tropic™ apparel results in a well-coordinated concealment system.
+                  </p>
+                  <br>
+                  <img src = "Images used/Unedited photos/Tropic snip.jpg">
+                  <p> This is an how the Multicam tropic NYCO (Nylon Cotton blend) fabric 
+                    would look like
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="item-container">
+                <div class="image">
+                  <img id="Fam" src="Images used/Unedited photos/MC Alphine.jpg">
+                </div>
+                <div class="text">
+                  <p id="item-description"> 
+                    The image to the left features the camouflage Multicam Alphine, the MultiCam Alpine™ 
+                    pattern was developed to effectively reduce the visual and near-IR 
+                    signature of a person operating in snow-covered environments. It is 
+                    intended to be used in every area of operation that receives significant 
+                    snowfall. The MultiCam Alpine™ pattern can be paired with MultiCam® gear 
+                    as needed to appropriately match the overall level of snow cover present.
+                  </p>
+                  <br>
+                  <img src = "Images used/Unedited photos//Alphine snip.jpg">
+                  <p> This is an how the Multicam Alphine NYCO (Nylon Cotton blend) fabric 
+                    would look like
+                  </p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="item-container">
+                <div class="image">
+                  <img id="Fam" src="Images used/Unedited photos/MC Black.jpg">
+                </div>
+                <div class="text">
+                  <p id="item-description"> 
+                    The image to the left features the camouflage Multicam Black, the MultiCam 
+                    Black™ pattern was developed to meet the unique requirements of law 
+                    enforcement officers operating in high-risk environments. It projects a 
+                    distinctly authoritative presence appropriate for domestic operations. 
+                    MultiCam Black™ is designed to complement an officer’s existing equipment 
+                    and present a sharp, professional image for top-tier law enforcement units.
+                  </p>
+                  <br>
+                  <img src = "Images used/Unedited photos/Black snip.jpg">
+                  <p> This is an how the Multicam Black NYCO (Nylon Cotton blend) fabric 
+                    would look like
+                  </p>
+                </div>
+              </div>
+              <hr>
+            </div>
+
+            <!-- The code for the footer from this point onwards -->
+        <footer class="footer">
+            <!-- Now we will add the footer Crye logo -->
+            <div class="Center">
+                <img src="Images used/Regular photos/Crye logo for ending.jpg" width = "500px" height = "500px">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="About Us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="Color Chart.html">Color chart</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us!</h4>
+                        <div class="social-links">
+                            <a href="http://www.youtube.com/@cryeprecisionllc" target="_blank"><img src="Images used/Edited photos/Youtube.png" width = 45px; height = 32px;></a>
+                            <a href="https://www.instagram.com/cryeofficial/" target="_blank"><img src="Images used/Regular photos/instagram.png" width = 32px; height = 32px;></a>
+                            <a href="https://www.facebook.com/CryeOfficial/" target="_blank"><img src="Images used/Regular photos/Facebook.png" width = 32px; height = 32px;></a>
+                            <a href="https://twitter.com/CryeOfficial" target="_blank"><img src="Images used/Edited photos/Twitter.png" width = 32px; height = 32px;></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Suscribe</h4>
+                        <ul>
+                            <p>Subscribe for the latest product drops, restocks and other news</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </footer>
+            
+            
+        <script src="autoconmplete.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script src="LanguageSelector.js"></script>
+        <script src="StickyHeader.js"></script>
+    </body>
+</html>
